@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(50,67,74);
+}
+
+$primary : rgb(50,67,74);
+$primaryLight : rgb(158,175,191);
+$secondary : rgb(179,137,63);
+$secondaryLight : rgb(184,154,116);
+.container{
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    h1{
+        color: $primaryLight;
+        margin-bottom: 50px;
+        font-size: 48px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .chess-desk{
+        width: 32rem;
+        height: 32rem;
+        box-sizing: content-box;
+        border: 1px $primary solid;
+        box-shadow: 10px 15px 25px 25px darken($primary, 8%);
+        .chess-block{
+            height: 4rem;
+            width: 4rem;
+            float: left;
+        }
+        .bg-black{
+            background: $primaryLight;
+        }
+
+        .bg-green{
+            background: $secondary;
+        }
+
+        .bg-active{
+            background: $secondaryLight;
+        }
+    }
+}

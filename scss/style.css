@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #32434a;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container h1 {
+  color: #9eafbf;
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .chess-desk {
+  width: 32rem;
+  height: 32rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 1px #32434a solid;
+  -webkit-box-shadow: 10px 15px 25px 25px #222d32;
+          box-shadow: 10px 15px 25px 25px #222d32;
+}
+
+.container .chess-desk .chess-block {
+  height: 4rem;
+  width: 4rem;
+  float: left;
+}
+
+.container .chess-desk .bg-black {
+  background: #9eafbf;
+}
+
+.container .chess-desk .bg-green {
+  background: #b3893f;
+}
+
+.container .chess-desk .bg-active {
+  background: #b89a74;
+}
+/*# sourceMappingURL=style.css.map */
